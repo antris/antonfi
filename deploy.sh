@@ -1,1 +1,1 @@
-scp -r output/. antonr@antonr.webfactional.com:webapps/antonfi
+nanoc && scp -r output/. antonr@antonr.webfactional.com:webapps/antonfi
