@@ -1,0 +1,27 @@
+<h1>How to make the simplest possible funnel in Google Analytics</h1>
+
+<p>So you know what a funnel is, but don’t know how to do it GA? I’ll show you the simplest possible funnel you can make!</p>
+
+<ol>
+<li><a href="http://www.google.com/analytics/">Sign up and set up</a> Google Analytics on your site.</li>
+<li>Make sure that for each step that you want in your funnel, you are sending a “page view” to Google Analytics. If you have a single-page app where the URL doesn’t change for each step, you can do this with the following JavaScript code: <code>ga('send', 'pageview', &lt;PAGE URL&gt;, &lt;PAGE TITLE&gt;)</code>. For example <code>ga('send', '/viewedProduct', 'Viewed product')</code>. If your Google Analytics tracking code is set up for your whole site and you do a full page refresh on each step, you don’t need to edit the code at all. The title doesn’t really matter, but remember what the page URL is for each step. This is very important later.</page></page></li>
+<li>Sign in to Google analytics and find the site (or “Property” in Google Analytics lingo) that you want to set up the funnel for.</li>
+<li>Click the “Admin” tab on top.</li>
+<li>Click “Goals” on right.</li>
+<li>Click the red “+ NEW GOAL” on top.</li>
+<li>In the “Name” field, you can put whatever you want. Usually it’s best to put a description of the “last step” in there. For example “Paid for purchase”.</li>
+<li>“Goal slot ID” I have no idea what this is. Leave it be.</li>
+<li>For “Type”, select “Destination”.</li>
+<li>In the “Goal details” section, for “Destination” put the URL that you sent to GA in step 2.</li>
+<li>Keep “Value” off. You can set it up later.</li>
+<li>Put “Funnel” on!</li>
+<li>For each step of the funnel, name the step descriptively, basically what the user did.</li>
+<li>Also, for each step put the URL exactly as you sent it to GA in step 2.</li>
+<li>Keep the “Required” switch in “No”. I don’t know why it’s there.</li>
+<li>Deploy your code and wait for the results to come in!</li>
+<li>When you think you have some results, go again to Google Analytics and find your site. This time, instead of the “Admin” tab, choose the “Reporting” tab on top of the site.</li>
+<li>In the top left search bar, type “funnel” and select “Conversions &gt; Goals &gt; Funnel visualisation”.</li>
+<li>In the “Goal option” drop down, make sure you have selected the Goal that you just set up.</li>
+<li>Scroll down.</li>
+<li>There it is.</li>
+</ol>
