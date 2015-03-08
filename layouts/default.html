@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title><%= if @item[:title] then @item[:title] + " - " end %>anton.fi</title>
-    <link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="/style.css" media="screen">
-    <meta name="generator" content="nanoc <%= Nanoc::VERSION %>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-  <body>
+  <body class="body">
     <%= yield %>
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css">
   </body>
 </html>
